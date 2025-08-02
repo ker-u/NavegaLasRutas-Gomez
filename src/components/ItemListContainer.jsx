@@ -1,6 +1,6 @@
 function ItemListContainer({ greeting }) {
     return (
-      <div style={{ padding: '2rem' }}>
+      <div>
         <h2>{greeting}</h2>
       </div>
     );

@@ -1,0 +1,32 @@
+nav {
+  position: fixed;
+  z-index: '4';
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 18px;
+  padding-top: 100px;
+  background-color: #2e4372;
+  border-bottom: double #eae7c4 12px;
+}
+nav img {
+  position: fixed;
+  top: 20px;
+  left: 12px;
+  width: 34px;
+  border: solid #eae7c4 1px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+a {
+  transition: 0.2s;
+  font-size: 18px;
+  color: #eae7c4;
+  text-decoration: none;
+}
+a:hover {
+  transform: scale(1.1);
+}
