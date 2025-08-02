@@ -1,0 +1,30 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.not-found p {
+  text-align: center;
+  color: #eae7c4;
+  font-size: 26px;
+  padding: 12px;
+  background-color: #2e4372;
+  border: double #eae7c4 12px;
+}
+.not-found a {
+  transition: 0.2s;
+  color: #2e4372;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 14px;
+  background-color: #eae7c4;
+  border: double #2e4372 12px;
+  margin-top: 40px;
+}
+.not-found a:hover {
+  transform: scale(1.1);
+  color: #eae7c4;
+  background-color: #2e4372;
+  border: double #eae7c4 12px;
+}

@@ -6,17 +6,11 @@ body {
   padding-top: 154px;
 }
 
-h1, h2, h3 {
+h1 {
   transition: 0.2s;
   text-align: center;
   color: #2e4372;
   font-size: 34px;
   margin: 10px;
   margin-bottom: 32px;
-}
-h2 {
-  font-size: 32px;
-}
-h3 {
-  font-size: 30px;
 }

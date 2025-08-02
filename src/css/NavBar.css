@@ -1,6 +1,6 @@
 nav {
   position: fixed;
-  z-index: '4';
+  z-index: 4;
   top: 0;
   left: 0;
   right: 0;
@@ -21,7 +21,7 @@ nav img {
   justify-content: center;
   gap: 60px;
 }
-a {
+.links a {
   transition: 0.2s;
   font-size: 18px;
   color: #eae7c4;

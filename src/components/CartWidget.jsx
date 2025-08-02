@@ -1,13 +1,13 @@
-import "../css/CartWidget.css"
+import "../css/CartWidget.css";
 
 function CartWidget() {
-    return (
-      <div class="cart">
-        🛒
-        <span>3</span>
-      </div>
-    );
-  }
+  return (
+    <div class="cart">
+      🛒
+      <span>3</span>
+    </div>
+  );
+}
   
-  export default CartWidget;
+export default CartWidget;
   

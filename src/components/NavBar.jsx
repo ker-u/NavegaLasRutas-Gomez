@@ -1,16 +1,17 @@
-import "../css/NavBar.css"
+import "../css/NavBar.css";
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
     <nav>
-      <a href="#">
+      <Link to="/">
         <img src="./logo.png" alt="Logo de Visozo Libros" />
-      </a>
+      </Link>
       <div class="links">
-        <a href="#">Ofertas</a>
-        <a href="#">Más vendidos</a>
-        <a href="#">Nuevos</a>
+        <Link to="/">Ofertas</Link>
+        <Link to="/">Más vendidos</Link>
+        <Link to="/">Nuevos</Link>
       </div>
       <CartWidget />
     </nav>
