@@ -1,7 +1,7 @@
 import "../css/ItemList.css"
 import Item from './Item';
 
-const ItemList = ({data}) => {
+function ItemList({data}) {
   return (
     <section class="item-list">
         {data.map((prod)=> <Item key={prod.id} prod={prod}/>)}

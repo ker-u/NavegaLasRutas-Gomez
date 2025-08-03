@@ -3,13 +3,14 @@
   width: 192px;
   background-color: #2e4372;
   border: double #eae7c4 12px;
+  margin: 12px 8px;
   place-items: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 140px 1fr 40px;
 }
 .item:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) translateY(-20px);
 }
 .item h3 {
   color: #eae7c4;
