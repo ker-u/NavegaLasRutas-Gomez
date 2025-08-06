@@ -9,9 +9,9 @@ function NavBar() {
         <img src="./logo.png" alt="Logo de Visozo Libros" />
       </Link>
       <div class="links">
-        <Link to="/">Ofertas</Link>
-        <Link to="/">Más vendidos</Link>
-        <Link to="/">Nuevos</Link>
+        <Link to="/categoria/ofertas">Ofertas</Link>
+        <Link to="/categoria/mas-vendidos">Más vendidos</Link>
+        <Link to="/categoria/nuevos">Nuevos</Link>
       </div>
       <CartWidget />
     </nav>
