@@ -58,6 +58,15 @@ export const getProducts = () => {
       } else {
         resolve(products);
       }
-    }, 0);
+    }, 1000);
   });
 };
+
+export const getOneProduct = (id) => {
+  return new Promise ((resolve)=>{
+      setTimeout(()=>{
+        const oneProduct = products.find((prod) => prod.id === Number(id));
+          resolve(oneProduct)
+      }, 500)
+  })
+}   

@@ -1,5 +1,5 @@
-import "../css/Item.css"
-import { Link } from 'react-router-dom'
+import "../css/Item.css";
+import { Link } from 'react-router-dom';
 
 function Item({prod}) {
   return (
@@ -7,7 +7,7 @@ function Item({prod}) {
       <h3>{prod.title}</h3>
       <img src="../public/book-placeholder.png" />
       <p>${prod.price} ARS</p>
-      <Link to="/">Detalle</Link>
+      <Link to={`/item/${prod.id}`}>Detalle</Link>
     </div>
   )
 }

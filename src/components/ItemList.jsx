@@ -1,10 +1,10 @@
-import "../css/ItemList.css"
+import "../css/ItemList.css";
 import Item from './Item';
 
 function ItemList({data}) {
   return (
     <section class="item-list">
-        {data.map((prod)=> <Item key={prod.id} prod={prod}/>)}
+      {data.map((prod)=> <Item key={prod.id} prod={prod}/>)}
     </section>
   )
 }
