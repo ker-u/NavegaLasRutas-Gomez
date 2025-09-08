@@ -27,6 +27,6 @@ nav img {
   color: #eae7c4;
   text-decoration: none;
 }
-a:hover {
+.links a:hover {
   transform: scale(1.1);
 }

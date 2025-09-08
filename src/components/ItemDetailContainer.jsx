@@ -17,7 +17,7 @@ function ItemDetailContainer() {
   console.log(detalle)
   return (
     <>
-    <ItemDetail detalle={detalle}/>
+      <ItemDetail detalle={detalle}/>
     </>
   )
 }

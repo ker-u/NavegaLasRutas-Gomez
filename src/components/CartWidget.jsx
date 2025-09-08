@@ -1,13 +1,13 @@
+import { Link } from "react-router-dom";
 import "../css/CartWidget.css";
 
-function CartWidget() {
+function CartWidget({ totalItems }) {
   return (
-    <div class="cart">
+    <Link to="/cart" className="cart">
       🛒
-      <span>3</span>
-    </div>
+      {totalItems > 0 && <span>{totalItems}</span>}
+    </Link>
   );
 }
-  
+
 export default CartWidget;
-  

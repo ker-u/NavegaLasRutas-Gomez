@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function NotFound() {
   return (
-    <div class="not-found">
+    <div className="not-found">
       <p>¡No se encontró la página!<br/>Error 404</p>
       <Link to='/'>Volver al Menú Principal</Link>
     </div>
