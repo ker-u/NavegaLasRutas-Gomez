@@ -1,25 +1,31 @@
-import { useEffect, useState } from 'react';
-import { getOneProduct } from '../mock/AsyncService';
 import ItemDetail from './ItemDetail';
-import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../service/firebase";
 
 function ItemDetailContainer() {
-  const [detalle, setDetalle]= useState({})
-  const {id} = useParams()
-  console.log(id, 'useparams')
+  const [detalle, setDetalle] = useState(null);
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-  useEffect(()=>{
-    getOneProduct(id)
-    .then((res)=> setDetalle(res))
-    .catch((error)=> console.log(error))
-  },[id])
+  useEffect(() => {
+    const docRef = doc(db, "productos", id);
 
-  console.log(detalle)
-  return (
-    <>
-      <ItemDetail detalle={detalle}/>
-    </>
-  )
+    getDoc(docRef).then((snapshot) => {
+      if (snapshot.exists()) {
+        setDetalle({ id: snapshot.id, ...snapshot.data() });
+      } else {
+        navigate("/NotFound");
+      }
+    });
+  }, [id, navigate]);
+
+  if (!detalle) {
+    return <p>⏳ Cargando...</p>;
+  }
+
+  return <ItemDetail detalle={detalle} />;
 }
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

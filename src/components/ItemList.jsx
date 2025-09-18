@@ -1,10 +1,10 @@
 import "../css/ItemList.css";
 import Item from './Item';
 
-function ItemList({data}) {
+function ItemList({ products }) {
   return (
     <section className="item-list">
-      {data.map((prod)=> <Item key={prod.id} prod={prod}/>)}
+      {products.map((prod)=> <Item key={prod.id} prod={prod}/>)}
     </section>
   )
 }
