@@ -12,4 +12,4 @@ function Item({prod}) {
   )
 }
 
-export default Item
+export default Item;
